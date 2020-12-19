@@ -1,0 +1,35 @@
+
+{% extends "mysite/layout.html" %}
+{% load static %}
+
+{% block content %}
+<br><br>
+<h1 style="text-align: center; color: red;">Недавно разработаны</h1><hr>
+<div class = 'container'>
+<div class="row" style = "margin-top: 50px;margin-bottom:50px;">
+    <div class="col-md-6 mb-6">
+      <div class="card h-100">
+        <img class="card-img-top" src="{% static 'images/tezbilet.png' %}" alt="">
+        <div class="card-body">
+          <h3 class="card-title" style = 'text-align:center;'><a href="http://tezbilet.travel/">Tezbilet Ru</a></h3>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-6">
+      <div class="card h-100">
+        <img class="card-img-top" src="{% static 'images/Portfolio.png' %}" alt="">
+        <div class="card-body">
+          <h3 class="card-title" style = 'text-align:center;'><a href="http://tezbilet.travel/">Сайт Портфолио</a></h3>
+          
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+{% endblock content %}
+

@@ -1,0 +1,86 @@
+
+{% extends "mysite/layout.html" %}
+{%load static%}
+
+{% block content %}
+
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Добро пожаловать на мой сайт!</h1>
+          <p class="lead mb-5 text-white mt-5 mb-2"><b>Меня зовут Ахмедов Ахмад. Я занимаюсь web-разработкой с нуля, под ключ.
+                                                       Выполняю верстку и программирование сайтов. Верстаю адаптивную верстку с помощью Bootstrap, 
+                                                       таким образом сайт получается красивым на любом устройстве, будь то компьютер, планшет или телефон!
+</b></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>Знания в области Web</h2>
+        <hr>
+        <p class = "text-black mt-5 mb-2">Язык программирования Python c OOP. Фреймворки Django, Flask, bootstrap 4 и язык запросов SQL.</p>
+        <p>А также преподаю бесплатные курсы Python на своем канале <a href = "https://www.youtube.com/channel/UCm6Jw7rEm2VSEXsd37W1ocw">Youtube</a>.</p>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Контакты</h2>
+        <hr>
+        <address>
+          <strong>Ахмедов Ахмад</strong>
+          <br><br>г.Ош
+        </address>
+        <address>
+          <abbr title="Phone">P:</abbr>
+          (996) 755 350 950
+          <br>
+          <abbr title="Email">E:</abbr>
+          <a href="mailto:#">ahmedov.thy@gmail.com</a>
+        </address>
+      </div>
+    </div>
+
+
+     <div class="row" style = "margin-bottom:50px;">
+      <div class="col-md-6 mb-6">
+        <div class="card h-100">
+          <img class="card-img-top" src="{%static 'images/pro.png'%}" alt="">
+          <div class="card-body">
+            <h3 class="card-title" style = 'text-align:center;'><a href="{% url 'portfolio'%}">Моё портфолио</a></h3>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-6">
+        <div class="card h-100">
+          <img class="card-img-top" src="{%static 'images/blog.png'%}" alt="">
+          <div class="card-body">
+            <h3 class="card-title" style = 'text-align:center;'><a href="https://akhmedovosh.medium.com/">Мой блог</a></h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  <!-- /.container -->
+<footer class="py-3 bg-dark", class="navbar-fixed-bottom">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; www.ahmadahmedov.com</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Footer -->
+  
+
+</body>
+
+</html>
+
+{% endblock  %}

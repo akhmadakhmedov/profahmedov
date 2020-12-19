@@ -1,0 +1,94 @@
+{% extends "mysite/layout.html" %}
+
+{% block content %}
+<section>
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div style="text-align: center;"><br>
+      <h1 class="display-4" style = 'color:blue'><b>Цены на сайты</b></h1><hr>
+   
+      <p class="lead"><b>„Если Вашего бизнеса нет в Интернете, то Вас нет в бизнесе!“</b></p>
+      <p><b>- Билл Гайтес</b></p>
+    </div>
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-center" style = 'color:blue'>Сайт – Визитка</h5>
+            <h6 class="card-price text-center" style = 'color:blue'>от 3000 сомов</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li>Срок – 3 дня</li>
+              <li>Хостинг (12 месяца)</li>
+              <li>Счетчик посещаемости сайта</li>
+              <li>Кнопки социальных сетей “Поделиться”</li>
+              <li>Интерактивная карта местоположения</li>
+              <li>Адаптивность к мобильным устройствам</li>
+              <li>Ограниченное количество блоков</li> 
+              <li>Возможность вставки картинок</li>
+              <li>Фотогалерея</li>
+              <br>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <a href="{% url 'contact'%}" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-center" style = 'color:blue'>Одностраничный сайт</h5>
+            <h6 class="card-price text-center" style = 'color:blue'>от 5000 сомов</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li>Срок – 4 дня</li>
+              <li>Хостинг (12 месяца)</li>
+              <li>Счетчик посещаемости сайта</li>
+              <li>Кнопки социальных сетей “Поделиться”</li>
+              <li>Интерактивная карта местоположения</li>
+              <li>Адаптивность к мобильным устройствам</li>
+              <li>Несколько вертикальных секций</li> 
+              <li>Готовый дизайн сайта</li>
+              <li>Модуль “Форма обратной связи”</li>
+              <li>Наполнение галерии/каталога (до 30 позиций)</li>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <a href="{% url 'contact'%}" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-center" style = 'color:blue'>сайт - Малый бизнес</h5>
+            <h6 class="card-price text-center" style = 'color:blue'>от 7000 сомов</h6>
+            <hr>
+            <ul class="fa-ul">
+              <li>Срок – 6 дня</li>
+              <li>Хостинг (12 месяца)</li>
+              <li>Счетчик посещаемости сайта</li>
+              <li>Кнопки социальных сетей “Поделиться”</li>
+              <li>Интерактивная карта местоположения</li>
+              <li>Адаптивность к мобильным устройствам</li>
+              <li>Несколько вертикальных секций</li> 
+              <li>Готовый дизайн сайта</li>
+              <li>Модуль “Форма обратной связи”</li>
+              <li>Копирайтинг (5 страниц)</li>
+              <li>Слайд-шоу</li>
+              <li>Модуль “Новости”</li>
+              <li>Модуль “Галерея”</li>
+            </ul>
+            <a href="{% url 'contact'%}" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock  %}
